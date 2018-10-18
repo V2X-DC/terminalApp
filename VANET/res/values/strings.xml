@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VANET</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">home</string>
+    <string name="icon">图示</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="account">请输入登录账号</string>
+	<string name="phone">请输入手机号</string>
+	<string name="carNumber">请输入车牌号</string>
+	<string name="secrete">请输入鉴权码</string>
+	<color name="form_text_color_tagging">#333</color>
+	<color name="public_anhui_color">#dddddd</color>
+	<string name="add">添加数据</string>
+	<string name="query">查询和删除数据</string>
+	<string name="person_name">姓名：</string>
+	<string name="person_sex">性别：</string>
+	<string name="query_btn">查询</string>
+	<string name="del_update">查询、修改和删除数据</string>
+	<string name="by_all">全部</string>
+	<string name="by_name">按姓名</string>
+	<string name="export_data">以excel文件形式导出数据到SD中</string>
+	<string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+</resources>

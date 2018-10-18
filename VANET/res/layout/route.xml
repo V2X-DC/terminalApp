@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize" >
+    </android.support.v7.widget.Toolbar>
+   <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+	    <com.baidu.mapapi.map.MapView  
+		    android:id="@+id/bmapView"  
+		    android:layout_width="fill_parent"  
+		    android:layout_height="fill_parent"  
+		    android:clickable="true" />
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="64dp"
+	        android:layout_gravity="top"
+	        android:background="@android:color/white"
+	        android:orientation="horizontal" >
+	        <EditText
+	            android:id="@+id/city_et"
+	            style="@style/tagging_edittext_style"
+	            android:layout_width="wrap_content"
+	            android:layout_weight="2"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="10dp"
+	            android:background="@null"
+	            android:hint="市"
+	            android:imeOptions="actionNext"
+	            android:inputType="text"
+	            android:maxLength="24"
+	            android:textSize="14sp"
+	            android:singleLine="true" />
+	        <EditText
+	            android:id="@+id/start_et"
+	            style="@style/tagging_edittext_style"
+	            android:layout_width="wrap_content"
+	            android:layout_weight="3"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="10dp"
+	            android:background="@null"
+	            android:hint="起点 "
+	            android:imeOptions="actionNext"
+	            android:inputType="text"
+	            android:maxLength="24"
+	            android:textSize="14sp"
+	            android:singleLine="true"
+	            android:focusable="true"
+	            android:focusableInTouchMode="true"/>
+	        <EditText
+	            android:id="@+id/end_et"
+	            style="@style/tagging_edittext_style"
+	            android:layout_weight="3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="10dp"
+	            android:background="@null"
+	            android:hint="终点"
+	            android:imeOptions="actionNext"
+	            android:inputType="text"
+	            android:textSize="14sp"
+	            android:maxLength="24"
+	            android:singleLine="true" />
+			<Button
+                android:id="@+id/start_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_bg"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+	    <ImageView
+	        android:id="@+id/request_iv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right|bottom"
+	        android:scaleType="fitXY"
+	        android:layout_marginBottom="80dp"
+	        android:layout_marginRight="20dp"
+	        android:src="@drawable/location" />
+	</FrameLayout>
+</RelativeLayout>

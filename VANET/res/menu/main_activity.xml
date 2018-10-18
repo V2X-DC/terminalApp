@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item
+       android:id="@+id/action_home"
+       android:icon="@drawable/tb_icon_more_home_56"
+       android:showAsAction="always"
+       android:title="@string/home" />
+   <item
+       android:id="@+id/action_message"
+       android:icon="@drawable/tb_icon_more_msg_56"
+       android:showAsAction="always"
+       android:title="message" />
+   <item
+        android:id="@+id/Cars"
+        android:icon="@drawable/carmessage"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="车辆信息"/>
+   <item
+        android:id="@+id/Route"
+        android:icon="@drawable/route"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="路径规划"/>
+   <item
+		android:id="@+id/message"
+		android:icon="@drawable/systemmessage"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="下发信息"/>
+    <item
+		android:id="@+id/Assess"
+		android:icon="@drawable/driveraction"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="驾驶行为评估"/>
+</menu>

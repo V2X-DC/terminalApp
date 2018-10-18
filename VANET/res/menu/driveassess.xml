@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".DriveAssess" >
+
+   <item
+       android:id="@+id/drihome"
+       android:icon="@drawable/tb_icon_more_home_56"
+       app:showAsAction="ifRoom"
+       android:title="@string/home" />
+
+</menu>

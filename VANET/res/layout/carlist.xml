@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background = "@drawable/bac">
+    
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize" >
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="本车信息" />
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#e0000000"/>
+    <TableLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+    <TableRow>
+    	<TextView 
+    	    android:id="@+id/Mnum"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text=" "
+    	    android:textSize="16sp"/>"
+    </TableRow>
+  	<TableRow>
+    	<TextView 
+    	    android:id="@+id/Msped"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:textSize="16sp"
+    	    android:hint="速度和方向"/>
+    </TableRow>
+    <TableRow>
+    	<TextView 
+    	    android:id="@+id/mTurn"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:hint="转弯状态:"/>
+    </TableRow>
+    <TableRow>
+    	<TextView 
+    	    android:id="@+id/address"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:hint="车辆位置"/>
+    </TableRow>
+    </TableLayout>
+   <!-- <TextView
+        android:id="@+id/mycarinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="129dp"
+        android:lines="9"
+        android:text="" />--> 
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="周边车辆信息"
+        android:textSize="20sp" 
+        /> 
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#e0000000"/>
+	 <ListView
+        android:id="@+id/othercarlist"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:divider="#B8B8B8" >
+     </ListView>
+</LinearLayout>

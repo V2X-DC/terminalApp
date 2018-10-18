@@ -1,0 +1,54 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    
+    <style name="AppTheme1" parent="android:Theme.Holo">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#FF7F24</item> <!--橙色-->
+        <item name="colorPrimaryDark">#FFDEAD</item> <!--深蓝色-->
+    
+    </style>
+	<style name="tagging_edittext_style" >
+        <item name="android:textColorHint">@color/public_anhui_color</item>
+        <item name="android:textColor">@color/form_text_color_tagging</item>
+    </style>
+    <style name="Theme.Transparent" parent="@android:style/Theme.Dialog">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowNoTitle">true</item>
+    </style>
+     <style name="text_white_bold_22">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">@color/light_white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="mystyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    <style name="diashow" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_up</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_down</item>
+    </style>
+    <style name="diashow1" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_up1</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_down1</item>
+    </style>
+</resources>

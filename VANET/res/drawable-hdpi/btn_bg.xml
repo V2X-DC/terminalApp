@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/btn_green_noactive" android:state_enabled="true" android:state_pressed="true"/>
+ <!-- pressed -->
+    <item android:drawable="@drawable/btn_green_normal" android:state_enabled="true" android:state_pressed="false"/>
+ <!-- default -->
+ <item android:drawable="@drawable/btn_green_noactive" android:state_enabled="false"></item>
+
+</selector>
